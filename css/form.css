@@ -1,0 +1,196 @@
+/* -------- ACTIVE NAV -------- */
+
+body {
+    background: #303030;
+}
+
+.container {
+    margin: 100px auto;
+    width: 90%;
+    max-width: 800px;
+    border: solid 5px #149ec1;
+    padding: 70px;
+    background: rgba(0, 0, 0, 0.3);
+    height: fit-content;
+}
+
+.container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    font-size: 45px;
+}
+
+[class^="err-"] {
+    display: none;
+    margin: 20px auto;
+    width: 400px;
+    height: 50px;
+    background: rgba(255, 0, 31, 0.5);
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+
+}
+
+
+[class^="err-"] p {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+[class^="err-"] a {
+    color: white;
+    font-weight: 900;
+}
+
+
+.form-option {
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #51c188;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+}
+
+.form-option:hover {
+    background-color: #646464;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+label {
+    color: white;
+    font-size: 25px;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=file], textarea, select, input[type=date],input[type=url]{
+    display: block;
+    border-bottom: 1px solid #c7c7c7;
+    background: transparent;
+    color: #d7d7d7;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=file], select, input[type=date],input[type=url] {
+    width: 80%;
+    max-width: 325px;
+    min-width: 100px;
+    height: 50px;
+    padding: 0 5px;
+}
+
+input[type=checkbox] {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+
+input[type=date] {
+    height: fit-content;
+}
+
+input::placeholder {
+    color: #a3a3a3;
+
+}
+
+input[type=file] {
+    max-width: 100%;
+    width: fit-content;
+    min-width: 300px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    background: #1a1a1a;
+    resize: vertical;
+    min-height: 150px;
+}
+
+textarea::placeholder {
+    color: #a3a3a3;
+}
+
+input[type=submit] {
+    width: 90%;
+    max-width: 300px;
+    height: 80px;
+    display: block;
+    margin: 60px auto 0;
+    background: #149ec1;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+option {
+    background-color: #0a0a0c;
+    color: #d7d7d7;
+}
+
+.success {
+    display: none;
+    height: 50px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.success p {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+    color: orangered;
+}
+
+
+/* ------------------- ANIMATION ------------------ */
+
+
+input[type=submit]:hover {
+    transition-duration: 0.7s;
+    background: #c7c7c7;
+    color: black;
+    box-shadow: 0 0 0 1px #c7c7c7;
+    cursor: pointer;
+}
+
+
+/* --------------------- MEDIA QUERY ----------------------- */
+
+
+@media screen and (max-width: 560px) {
+    .container {
+        padding: 20px;
+    }
+
+}

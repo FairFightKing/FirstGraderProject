@@ -1,0 +1,59 @@
+/* -------- ACTIVE NAV -------- */
+
+
+#footerList li:nth-child(1){
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+
+.container {
+    height: 1080px;
+    background: #b164b0 url("../img/BG/apex-legends-all-characters-uhdpaper.com-4K-37.jpg") no-repeat center center;
+}
+
+.filter {
+    background: rgba(0, 0, 0, 0.76);
+    height: inherit;
+
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.content h2, p {
+    padding-bottom: 50px;
+}
+
+.content h2 {
+    font-size: 60px;
+}
+
+.content h3 {
+    font-size: 35px;
+    color: #b164b0;
+    padding-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        height: 1500px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .content{
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,87 @@
+body{
+    background: #303030 ;
+}
+
+
+.container {
+    width: 100%;
+}
+
+nav ul li:nth-child(3) {
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+    padding: 60px;
+    border: solid 5px #00a0a6;
+    height: fit-content;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.header {
+    width: fit-content;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+.header > * {
+    margin-bottom: 80px;
+    padding: 0 20px 15px 0;
+    border-bottom: 1px solid lightblue;
+    text-align: left;
+    color: #00a0a6;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.header span {
+    padding-left: 30px;
+    font-size: 35px;
+    color: white;
+    font-weight: initial;
+    text-transform: initial;
+}
+
+.text {
+    width: 90%;
+    margin: auto;
+    min-height: 100px;
+    height: fit-content;
+}
+
+.text h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #00A0A6;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.text p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+.back-contact {
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: #51c188;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+}
+
+.back-contact:hover {
+    background-color: #646464;
+}

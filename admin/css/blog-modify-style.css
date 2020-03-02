@@ -1,0 +1,134 @@
+nav ul li:nth-child(4) {
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+.container {
+    border: solid 5px #d100be;
+}
+
+.container h2 span {
+    color: #e800d4;
+}
+
+textarea{
+    min-height: 300px;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: #A775C9;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.form-option {
+    color: darkorange;
+}
+
+input[type=submit] {
+    background: rgba(131, 0, 255, 0.81);
+}
+
+#flex-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-bottom: 10px;
+    padding: 20px 0 40px;
+}
+
+#flex-checkbox > div {
+    width: calc((100% - 100px) / 2);
+    margin: 8px 0;
+    border: 1px solid rgba(100, 100, 100, 0.64);
+    padding: 3px;
+}
+
+#flex-checkbox input[type=checkbox] {
+    float: right;
+}
+
+#flex-checkbox label {
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-modify {
+    max-width: 800px;
+    width: calc((100% - 50px) / 2);
+    margin: 0;
+    margin-top: 50px;
+
+}
+
+.img-preview {
+    display: block;
+    max-width: 50%;
+    max-height: 400px;
+    margin: auto;
+}
+
+.article-preview {
+    width: calc((100% - 50px) / 2);
+    display: block;
+    height: fit-content;
+    min-height: calc(100vh - (70px + 40px + 50px));
+    max-width: 100%;
+    margin-top: 50px;
+    border: solid 5px #d100be;
+}
+
+.article-preview > div {
+    border-bottom: 1px solid #bcbcbc;
+    padding: 20px 0 20px;
+}
+.article-preview div:last-child {
+    border-bottom: none;
+    width: 90%;
+    margin: auto;
+}
+
+
+.article-preview p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #a775c9;
+    font-weight: 700;
+}
+
+.article-preview span {
+    color: white;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.content{
+    width: 120%;
+    margin-left: -10%;
+}
+#content{
+    height: 500px;
+}
+
+.disabled {
+    display: none;
+}
+
+#select-id {
+    display: none;
+}

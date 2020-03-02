@@ -1,0 +1,52 @@
+/* -------- ACTIVE NAV -------- */
+
+
+#footerList li:nth-child(3){
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+main {
+    color: #ffffff;
+    background: url(../img/BG/apex-legends-bloodhound-uhdpaper.com-4K-71.jpg) center no-repeat fixed;
+}
+#bgOpacity{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.termsOfUse {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.termsOfUse h2{
+    margin-bottom: 25px;
+    padding-top: 25px;
+    border-top: #222222 solid 2px;
+}
+
+.termsOfUse p{
+    margin: 35px auto 0;
+    line-height: 25px;
+    width: 85%;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .termsOfUse {
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .termsOfUse {
+        width: 95%;
+    }
+    .termsOfUse p{
+        line-height: 35px;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,23 @@
+/* -------- ACTIVE NAV -------- */
+
+.container {
+    border: solid 5px #149ec1;
+}
+
+.form-option {
+    color: #51c188;
+}
+
+
+input[type=submit] {
+
+    background: #149ec1;
+}
+
+
+/* ------------------- ANIMATION ------------------ */
+
+
+
+
+/* --------------------- MEDIA QUERY ----------------------- */

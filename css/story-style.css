@@ -1,0 +1,292 @@
+
+/* -------- ACTIVE NAV -------- */
+
+nav ul li:nth-child(3){
+    background-color: rgba(127, 4, 0, 0.53);
+
+}
+
+
+
+main {
+    background: url(../img/BG/apex-legends-bloodhound-art-4K-6.jpg) no-repeat center left -120px;
+}
+
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 70px;
+    text-decoration: underline rgb(180, 180, 180);
+}
+
+
+/* ---------- ID # ---------- */
+
+#content {
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+}
+
+
+/* ---------- END ID ---------- */
+
+
+/* ---------- CLASS . ---------- */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.infos {
+    width: 380px;
+    height: 550px;
+    background-color: #222222;
+    border: 5px solid black;
+    box-shadow: 0 0 70px 10px rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    opacity: 0;
+    transform: translate3d(-30px, 0px, 0px);
+
+
+}
+
+.infos h4 {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.darken {
+    background: rgba(0, 0, 0, 0.45);
+    min-height: 100vh;
+}
+
+
+.profile {
+    width: 250px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5%;
+    box-shadow: 0 0 30px 8px rgb(0, 0, 0);
+}
+
+.about {
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutLeft {
+    width: 40%;
+    text-align: right;
+    font-weight: bolder;
+
+}
+
+.aboutRight {
+    width: 40%;
+    font-weight: normal;
+}
+
+.story {
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translate3d(30px, 0px, 0px);
+
+}
+
+.story p {
+    margin-top: 40px;
+}
+
+/* ---------- END CLASS ---------- */
+
+/* ---------- ANIMATION CLASS ----------*/
+
+.appear {
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out ;
+}
+
+.appear-right {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.appear-left {
+    transform: translate3d(0px, 0px, 0px);
+}
+/* ---------- @media query ---------- */
+
+@media screen and (max-width: 1500px) {
+
+    #content {
+        width: 90%;
+    }
+
+    .infos {
+        width: 25%;
+    }
+
+    .infos h4 {
+        margin: 10px;
+    }
+
+    .profile {
+        width: 80%;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        background: url(../img/BG/apex-legends-bloodhound-art-4K-6.jpg) no-repeat center;
+    }
+
+    .infos {
+        width: 35%;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    #content {
+        width: 95%;
+    }
+
+    .story {
+        font-size: 18px;
+        width: 55%;
+    }
+
+    .infos {
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    main {
+        background: url(../img/BG/apex-legends-bloodhound-art-4K-6.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center left -400px;
+        background-repeat: no-repeat;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    .infos {
+        width: 40%;
+    }
+
+    .story {
+        width: 50%;
+        line-height: 45px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .about {
+        justify-content: space-between;
+    }
+
+    .aboutRight {
+        width: 49%;
+    }
+
+    .aboutLeft {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    main {
+        background-position: center left -600px;
+    }
+
+    .aboutLeft p:last-child {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 516px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 70%;
+        height: 550px;
+        margin: 100px auto;
+    }
+
+    .story {
+        width: 80%;
+        line-height: 25px;
+        margin: auto;
+    }
+
+    .aboutLeft p:last-child {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        background-attachment: fixed;
+        background-position: center left -200px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .infos {
+        width: 90%;
+    }
+
+    .story {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    h2 {
+        font-size: 25px;
+    }
+
+}
+

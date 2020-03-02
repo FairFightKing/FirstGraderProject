@@ -1,0 +1,332 @@
+/* -------- ACTIVE NAV -------- */
+
+nav ul li:nth-child(2) {
+    background-color: rgba(127, 4, 0, 0.53);
+
+}
+
+.fit-height {
+    margin-top: 30px;
+    min-height: calc(100vh - (112px + 83px + 30px));
+    height: fit-content;
+}
+
+/* external css: flickity.css */
+.carousel {
+    background: #000000;
+    margin-bottom: 30px;
+}
+
+.carousel-cell {
+    width: 90%;
+    height: 735px;
+    margin-right: 10px;
+    background: #292929;
+    border-radius: 5px;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: #000000;
+}
+
+
+.content {
+    width: 80%;
+    height: 550px;
+    margin: 100px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translate3d(0px, 10px, 0px);
+    position: relative;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.bot-content {
+    align-content: center;
+    align-items: flex-end;
+}
+
+.content img {
+    width: 410px;
+    height: auto;
+}
+
+
+.color {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+
+.color a {
+    display: block;
+    padding: 10px 0;
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.tips li {
+    padding-bottom: 10px;
+}
+
+.table {
+    position: relative;
+    overflow: hidden scroll;
+    height: 200px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.table p {
+    width: 100%;
+}
+
+.recap-container {
+    width: 75%;
+    display: inline-block;
+}
+
+.recap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.recap h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.recap h3 {
+    font-size: 35px;
+    color: #959595;
+    margin-bottom: 30px;
+}
+
+.recap h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info {
+    width: 100%;
+}
+
+.info-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.info-container p {
+    padding-bottom: 15px;
+}
+
+.info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 120px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-flex div {
+    margin-bottom: 20px;
+}
+
+.info-flex p {
+    line-height: 25px;
+}
+
+.cellQ {
+    background: #646464 url("../img/ability/BG/Tactical.png") no-repeat center center;
+}
+
+.cellP {
+    background: #646464 url("../img/ability/BG/Passive.png") no-repeat center center;
+}
+
+.cellR {
+    background: #646464 url("../img/ability/BG/Ultimate.png") no-repeat center center;
+}
+
+
+/* ---------- ANIMATION CLASS ----------*/
+.out {
+    transform: translate3d(0px, -150px, 0px);
+    opacity: 0;
+}
+
+.in {
+    transform: translate3d(0px, 20px, 0px);
+}
+
+.on {
+    color: rgba(212, 24, 0, 0.8);
+    background: #646464;
+}
+
+.off {
+    color: rgb(255, 139, 91);
+    background-color: rgba(100, 3, 0, 0.76);
+}
+
+
+.table > * {
+    position: absolute;
+    transition: transform 1000ms ease-in-out, opacity 750ms;
+    width: 100%;
+}
+
+.appear {
+    transition: transform 1000ms, opacity 1000ms;
+    transform: translate3d(0px, -10px, 0px);
+    opacity: 1;
+}
+
+
+/* ---------- @media query ---------- */
+
+@media screen and (max-width: 1510px) {
+
+    .content {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1175px) {
+
+    .top-content {
+        width: 100%;
+    }
+
+    .content img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .bot-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .color {
+        width: 30%;
+        height: 200px;
+    }
+
+    .table {
+        width: 70%;
+        height: 200px;
+    }
+
+    .recap h2 {
+        font-size: 40px;
+    }
+
+    .recap h3 {
+        font-size: 25px;
+    }
+
+    .recap h4 {
+        font-size: 15px;
+    }
+
+    .in {
+        transform: translate3d(0px, 30px, 0px);
+    }
+
+    .outside {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .content {
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .tips {
+        font-size: 14px;
+    }
+
+}
+
+/* flickity on by default */
+.carousel:after {
+    content: 'flickity';
+    display: none;
+}
+
+@media screen and ( max-width: 600px ) {
+    /* disable Flickity for large devices */
+    .carousel:after {
+        content: '';
+    }
+
+    .top-content {
+        display: block;
+        text-align: center;
+    }
+
+    .bot-content {
+        position: relative;
+        height: 300px;
+        align-items: center;
+
+    }
+
+    .content {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+}
+
+
+
+

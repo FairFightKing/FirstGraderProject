@@ -1,0 +1,19 @@
+/* -------- ACTIVE NAV -------- */
+
+
+.container {
+    border: solid 5px #a775c9;
+}
+
+.form-option {
+    color: rgb(208, 113, 92);
+}
+
+input[type=submit] {
+    background: #a775c9;
+}
+
+
+
+
+/* --------------------- MEDIA QUERY ----------------------- */

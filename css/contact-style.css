@@ -1,0 +1,22 @@
+/* -------- ACTIVE NAV -------- */
+
+
+#footerList li:nth-child(2){
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+.container {
+    border: solid 5px #70c982;
+    opacity: 0;
+}
+
+input[type=submit] {
+    background: #1cca8b;
+}
+
+.appear {
+    transition: transform 1000ms, opacity 1000ms;
+    transform: translate3d(0px, -10px, 0px);
+    opacity: 1;
+}
+

@@ -1,0 +1,117 @@
+/* -------- ACTIVE NAV -------- */
+
+nav ul li:nth-child(4) {
+    background-color: rgba(127, 4, 0, 0.53);
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    min-height: calc(100vh - (112px + 83px));
+    height: fit-content;
+    background: url("../img/article/bg.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+article {
+    width: calc((90% - 200px) / 3);
+    background-color: #292929;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #00b3ff;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+
+.img-height {
+    width: 100%;
+}
+
+.description-height {
+    min-height: 60px;
+}
+
+.article-content {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.article-content h2 {
+    margin-bottom: 5px;
+    font-size: 40px;
+    min-height: 90px;
+}
+
+.article-content h3 {
+    color: #777777;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.article-content img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.article-content p {
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 5px;
+}
+
+.article-content {
+    overflow: hidden;
+}
+
+.article-content:hover {
+    background-color: rgba(128, 194, 209, 0.73);
+    transition: 500ms background-color ease-in-out;
+}
+
+.article-content:hover img {
+    transition: 500ms opacity ease-in-out, 500ms transform ease-in-out;
+    transform: perspective(500px) translate3d(0px, 0px, 50px);
+
+}
+
+
+@media screen and (max-width: 1470px) {
+
+    article {
+        width: calc((90% - 100px) / 3);
+    }
+    .article-content img {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    article {
+        width: calc((90% - 100px) / 2);
+    }
+
+    .article-content img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    article {
+        width: 90%
+    }
+    .article-content img {
+        width: 85%;
+    }
+
+}

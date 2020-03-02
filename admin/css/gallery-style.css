@@ -1,0 +1,15 @@
+/* -------- ACTIVE NAV -------- */
+
+nav ul li:nth-child(2) {
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+.container {
+    border: solid 5px #b262c1;
+}
+.form-option {
+    color: #51c188;
+}
+input[type=submit] {
+    background: #1cca8b;
+}

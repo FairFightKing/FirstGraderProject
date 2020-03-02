@@ -1,0 +1,40 @@
+/* -------- ACTIVE NAV -------- */
+nav ul li:nth-child(4) {
+    background-color: rgba(127, 4, 0, 0.53);
+}
+
+.container {
+    border: solid 5px #149ec1;
+    max-width: 1200px;
+}
+
+.form-option {
+    color: #51c188;
+}
+
+label {
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+input{
+    margin: auto;
+}
+input::placeholder {
+    text-align: center;
+}
+
+
+input[type=text] {
+    max-width: 500px;
+}
+
+input[type=submit] {
+    background: #1cca8b;
+}
+
+textarea {
+    min-height: 400px;
+}
+
+/* --------------------- MEDIA QUERY ----------------------- */
